@@ -18,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping("/api/correos")
 public class MailController {
-
+//check correo client, no funca
     private RestTemplate restTemplate = new RestTemplate();
 
 

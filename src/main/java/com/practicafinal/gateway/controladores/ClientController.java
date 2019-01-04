@@ -20,7 +20,7 @@ public class ClientController {
 
         @Autowired
         private MailController correocontroller;
-
+                // gateway ccheck cliente reg
         @GetMapping(value = "/api/clientes/todos", produces = { "application/json" })
         public ResponseEntity<List<Client>> listar() {
                 ResponseEntity<List<Client>> listResponseEntity = restTemplate.exchange(
@@ -110,6 +110,7 @@ public class ClientController {
 
                 return new ResponseEntity<>(exchange.getBody(), exchange.getStatusCode());
         }
+        //change indent
 
         @GetMapping("/api/clientes/cantidad")
         public ResponseEntity<Long> contarClientes() {
